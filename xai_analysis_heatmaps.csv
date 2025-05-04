@@ -1,0 +1,463 @@
+Image ID,Study,Label,Prediction,Status,Augmentation,Confidence,Heatmap,Score,Justification
+1,Bacterial Leaf Blight,Bacterial Leaf Blight,Bacterial Leaf Blight,TP,No,0.82,Lime,0.3,Failed to capture some browning spots while highlighting noise in sky or unnecessary leaves. Very weak maps
+1,Bacterial Leaf Blight,Bacterial Leaf Blight,Bacterial Leaf Blight,TP,No,0.82,GradCAM,0.8,"Captured many tips as red or yellow. All damaged leaves were highlighted, but some spots were shown too weak. Highlighted too much noise"
+1,Bacterial Leaf Blight,Bacterial Leaf Blight,Bacterial Leaf Blight,TP,No,0.82,Integrated Gradients,0.6,Capture most browning spots but failed to capture a few important regions or incorrectly highlighted noise
+1,Bacterial Leaf Blight,Bacterial Leaf Blight,Bacterial Leaf Blight,TP,Yes,1,Lime,0.3,Highlighted most of the map with about 0.5-0.7 but hard to assess to normal user due to too much
+1,Bacterial Leaf Blight,Bacterial Leaf Blight,Bacterial Leaf Blight,TP,Yes,1,GradCAM,0.7,Similar results to non-aug except skipping on some essential brown regions and highlighting too much noise
+1,Bacterial Leaf Blight,Bacterial Leaf Blight,Bacterial Leaf Blight,TP,Yes,1,Integrated Gradients,0.8,Highlighted most damage but failed to capture some
+2,Bacterial Leaf Blight,Bacterial Leaf Blight,Bacterial Leaf Blight,TP,No,1,Lime,0.2,Got some regions right with little attribution. Missed essential regions
+2,Bacterial Leaf Blight,Bacterial Leaf Blight,Bacterial Leaf Blight,TP,No,1,GradCAM,0.8,"Highlighted lighter leaves and more obvious larger leaves, but missed dried leaves at the bottom"
+2,Bacterial Leaf Blight,Bacterial Leaf Blight,Bacterial Leaf Blight,TP,No,1,Integrated Gradients,0.7,"Highlighted lighter leaves and more obvious larger leaves with lower confidence, but missed dried leaves at the bottom"
+2,Bacterial Leaf Blight,Bacterial Leaf Blight,Bacterial Leaf Blight,TP,Yes,1,Lime,0.5,Highlighted essential regions with moderate confidence but less important regions (dried leaves at bottom) with very high confidence. Missed some spots and highlighted too much
+2,Bacterial Leaf Blight,Bacterial Leaf Blight,Bacterial Leaf Blight,TP,Yes,1,GradCAM,0.7,"Highlighted lighter leaves and more obvious larger leaves, but missed dried leaves at the bottom and an important spot. Had less confidence than non-aug"
+2,Bacterial Leaf Blight,Bacterial Leaf Blight,Bacterial Leaf Blight,TP,Yes,1,Integrated Gradients,0.6,Highlighted some essential regions with moderate confidence but less important regions (dried leaves at bottom) . with very high confidence. Missed some spots and highlighted too much
+3,Bacterial Leaf Blight,Bacterial Leaf Blight,Bacterial Leaf Blight,TP,No,1,Lime,0.5,"Highlighted large ""regions"" with damaged and healthy leaves, making it hard to be accessible. Missed a few essential spots"
+3,Bacterial Leaf Blight,Bacterial Leaf Blight,Bacterial Leaf Blight,TP,No,1,GradCAM,1,Highlighted regions correctly
+3,Bacterial Leaf Blight,Bacterial Leaf Blight,Bacterial Leaf Blight,TP,No,1,Integrated Gradients,0.8,"Highlighted most regions correclty, but missed a few dried leaves at the bottom"
+3,Bacterial Leaf Blight,Bacterial Leaf Blight,Bacterial Leaf Blight,TP,Yes,1,Lime,0.5,"Highlighted large ""regions"" with damaged and healthy leaves, making it hard to be accessible. Missed a few essential spots"
+3,Bacterial Leaf Blight,Bacterial Leaf Blight,Bacterial Leaf Blight,TP,Yes,1,GradCAM,0.9,Highlighted regions correctly with too much confidence
+3,Bacterial Leaf Blight,Bacterial Leaf Blight,Bacterial Leaf Blight,TP,Yes,1,Integrated Gradients,0.8,"Highlighted most regions correclty, but missed a few dried leaves at the bottom"
+4,Bacterial Leaf Blight,Normal,Bacterial Leaf Blight,FP,No,0.47,Lime,N/A,"Scattered, does not tell you much"
+4,Bacterial Leaf Blight,Normal,Bacterial Leaf Blight,FP,No,0.47,GradCAM,N/A,"Focused on smooth, healthy leeaves. Entire map is mostly highlighted, with focus on rocks(?)"
+4,Bacterial Leaf Blight,Normal,Bacterial Leaf Blight,FP,No,0.47,Integrated Gradients,N/A,"Scattered, does not tell you much"
+4,Bacterial Leaf Blight,Normal,Normal,TP,Yes,0.91,Lime,N/A,"Scattered, does not tell you much"
+4,Bacterial Leaf Blight,Normal,Normal,TP,Yes,0.91,GradCAM,N/A,"Focused on smooth, healthy leeaves"
+4,Bacterial Leaf Blight,Normal,Normal,TP,Yes,0.91,Integrated Gradients,N/A,"Scattered, does not tell you much"
+5,Bacterial Leaf Blight,Tungro,Bacterial Leaf Blight,FP,No,0.89,Lime,0.4,"Some major orange tips highlighted with confidence, but spread for smaller orange tips is high. Missed a few spots"
+5,Bacterial Leaf Blight,Tungro,Bacterial Leaf Blight,FP,No,0.89,GradCAM,0.7,"Some major orange tips highlighted with confidence, but spread for smaller orange tips is high"
+5,Bacterial Leaf Blight,Tungro,Bacterial Leaf Blight,FP,No,0.89,Integrated Gradients,0.7,"Some major orange tips highlighted with confidence, but some are missed"
+5,Bacterial Leaf Blight,Tungro,Tungro,TP,Yes,1,Lime,0.2,"Some major orange tips highlighted with confidence, but spread for smaller orange tips is high. Missed a few major spots"
+5,Bacterial Leaf Blight,Tungro,Tungro,TP,Yes,1,GradCAM,0.9,"Orange tips are highlighted with great confidence, able to differentiate from incorrect regions with lower confidence. Some parts missed"
+5,Bacterial Leaf Blight,Tungro,Tungro,TP,Yes,1,Integrated Gradients,1,Orange tips are highlighted with great confidence
+6,Bacterial Leaf Blight,Tungro,Bacterial Leaf Blight,FP,No,0.79,Lime,0.5,Does not cover essential leaves well. Highlights some areas with moderate confidence
+6,Bacterial Leaf Blight,Tungro,Bacterial Leaf Blight,FP,No,0.79,GradCAM,0.1,Completely skips over essential leaves and highlights unnecessary stuff
+6,Bacterial Leaf Blight,Tungro,Bacterial Leaf Blight,FP,No,0.79,Integrated Gradients,0.9,Highlights very well but includes some noise
+6,Bacterial Leaf Blight,Tungro,Tungro,TP,Yes,1,Lime,0.3,Does not cover essential leaves well. Highlights some areas with moderate confidence
+6,Bacterial Leaf Blight,Tungro,Tungro,TP,Yes,1,GradCAM,0.5,Highlights essential regions with lower confidence and highlights too much noise
+6,Bacterial Leaf Blight,Tungro,Tungro,TP,Yes,1,Integrated Gradients,0.9,Highlights very well but includes some noise (different from non-aug)
+7,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,No,0.99,Lime,0.3,Parts of damaged regions are highlighted
+7,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,No,0.99,GradCAM,0.7,Highlights most but not all damaged regions
+7,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,No,0.99,Integrated Gradients,0.7,Highlights most but not all damaged regions and has too much noise
+7,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,Yes,0.99,Lime,0.3,Parts of damaged regions are highlighted
+7,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,Yes,0.99,GradCAM,0.6,Highlights most but not all damaged regions and has too much confident noise
+7,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,Yes,0.99,Integrated Gradients,0.7,Highlights most but not all damaged regions and has too much noise
+8,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,No,0.98,Lime,0.4,Highlighted some regions but too large to detect spots
+8,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,No,0.98,GradCAM,1,Successfully highlighted brown tips and spots
+8,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,No,0.98,Integrated Gradients,1,Successfully highlighted brown tips and spots
+8,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,Yes,0.99,Lime,0.4,Highlighted some regions but too large to detect spots
+8,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,Yes,0.99,GradCAM,0.8,Successfully highlighted brown tips and spots but had some noise
+8,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,Yes,0.99,Integrated Gradients,1,Successfully highlighted brown tips and spots
+9,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,No,1,Lime,0.4,Essential regions were highlighted with low confidence
+9,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,No,1,GradCAM,0.1,Essential regions were the only ones not highlighted
+9,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,No,1,Integrated Gradients,0.8,Essential regions are highlighted but has a little noise
+9,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,Yes,1,Lime,0.6,Essential regions were highlighted with moderate confidence but does not capture some
+9,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,Yes,1,GradCAM,0.1,Essential regions were the only ones not highlighted
+9,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,Yes,1,Integrated Gradients,0.7,Essential regions are highlighted but does not capture some
+10,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,FN,No,0.97,Lime,0.7,Strong confidence in essential region but some confident noise in top right
+10,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,FN,No,0.97,GradCAM,0.7,Strong confidence in essential region but some confident noise in top right
+10,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,FN,No,0.97,Integrated Gradients,0.7,Strong confidence in essential region but some confident noise in top right
+10,Bacterial Leaf Streak,Bacterial Leaf Streak,Downy Mildew,FN,Yes,0.63,Lime,0.7,Strong confidence in essential region but some confident noise in top right
+10,Bacterial Leaf Streak,Bacterial Leaf Streak,Downy Mildew,FN,Yes,0.63,GradCAM,1,Strong confidence in essential region
+10,Bacterial Leaf Streak,Bacterial Leaf Streak,Downy Mildew,FN,Yes,0.63,Integrated Gradients,0.9,Strong confidence in essential region but some confident noise in top right and around
+11,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,FN,No,0.57,Lime,0.6,Failed to capture essential regions with confidence
+11,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,FN,No,0.57,GradCAM,0.6,Failed to capture essential regions with confidence
+11,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,FN,No,0.57,Integrated Gradients,0.8,Capture essential regions but included noise
+11,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,Yes,0.89,Lime,0.6,Failed to capture essential regions
+11,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,Yes,0.89,GradCAM,0.6,Failed to capture essential regions with confidence
+11,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,Yes,0.89,Integrated Gradients,0.8,Captured essential regions but included some noise
+12,Bacterial Leaf Streak,Bacterial Leaf Streak,Brown Spot,FN,No,0.86,Lime,0.3,Did not capture essential regions
+12,Bacterial Leaf Streak,Bacterial Leaf Streak,Brown Spot,FN,No,0.86,GradCAM,0.7,Captured some essential regions
+12,Bacterial Leaf Streak,Bacterial Leaf Streak,Brown Spot,FN,No,0.86,Integrated Gradients,0.7,Captured some essential regions
+12,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,Yes,0.98,Lime,0.3,Did not captur essential regions
+12,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,Yes,0.98,GradCAM,0.7,Captured some essential regions
+12,Bacterial Leaf Streak,Bacterial Leaf Streak,Bacterial Leaf Streak,TP,Yes,0.98,Integrated Gradients,0.7,Captured some essential regions
+13,Bacterial Leaf Streak,Brown Spot,Bacterial Leaf Streak,FP,No,0.99,Lime,0.2,Did not capture well
+13,Bacterial Leaf Streak,Brown Spot,Bacterial Leaf Streak,FP,No,0.99,GradCAM,0.9,Captured tips well
+13,Bacterial Leaf Streak,Brown Spot,Bacterial Leaf Streak,FP,No,0.99,Integrated Gradients,0.8,Captured areas well but missed a few spots
+13,Bacterial Leaf Streak,Brown Spot,Bacterial Leaf Streak,FP,Yes,1,Lime,0.2,Did not capture well
+13,Bacterial Leaf Streak,Brown Spot,Bacterial Leaf Streak,FP,Yes,1,GradCAM,0.7,Captured tips well but with less confidence
+13,Bacterial Leaf Streak,Brown Spot,Bacterial Leaf Streak,FP,Yes,1,Integrated Gradients,0.8,Captured areas well but missed a few spots
+14,Bacterial Panicle Blight,Bacterial Panicle Blight,Bacterial Panicle Blight,TP,No,1,Lime,0.5,"Moderately included the damaged grain, but other areas had higher percentages"
+14,Bacterial Panicle Blight,Bacterial Panicle Blight,Bacterial Panicle Blight,TP,No,1,GradCAM,0.1,Avoided the damaged grain
+14,Bacterial Panicle Blight,Bacterial Panicle Blight,Bacterial Panicle Blight,TP,No,1,Integrated Gradients,0.9,Focused on the damaged grain but included some noise
+14,Bacterial Panicle Blight,Bacterial Panicle Blight,Bacterial Panicle Blight,TP,Yes,0.97,Lime,0.1,Avoided the damaged grain
+14,Bacterial Panicle Blight,Bacterial Panicle Blight,Bacterial Panicle Blight,TP,Yes,0.97,GradCAM,0.1,Avoided the damaged grain
+14,Bacterial Panicle Blight,Bacterial Panicle Blight,Bacterial Panicle Blight,TP,Yes,0.97,Integrated Gradients,1,Focused on the damaged grain
+15,Bacterial Panicle Blight,Bacterial Panicle Blight,Bacterial Panicle Blight,TP,No,1,Lime,0.1,Avoided the damaged grain
+15,Bacterial Panicle Blight,Bacterial Panicle Blight,Bacterial Panicle Blight,TP,No,1,GradCAM,1,Focused on the damaged grain
+15,Bacterial Panicle Blight,Bacterial Panicle Blight,Bacterial Panicle Blight,TP,No,1,Integrated Gradients,0.9,Focused on the damaged grain but included some noise
+15,Bacterial Panicle Blight,Bacterial Panicle Blight,Bacterial Panicle Blight,TP,Yes,1,Lime,0.1,Avoided the damaged grain
+15,Bacterial Panicle Blight,Bacterial Panicle Blight,Bacterial Panicle Blight,TP,Yes,1,GradCAM,1,Focused on the damaged grain
+15,Bacterial Panicle Blight,Bacterial Panicle Blight,Bacterial Panicle Blight,TP,Yes,1,Integrated Gradients,0.9,Focused on the damaged grain but included some noise
+16,Bacterial Panicle Blight,Bacterial Panicle Blight,Bacterial Panicle Blight,TP,No,1,Lime,0.4,Missed some aspects of damaged grain
+16,Bacterial Panicle Blight,Bacterial Panicle Blight,Bacterial Panicle Blight,TP,No,1,GradCAM,0.5,Focused too much on noise
+16,Bacterial Panicle Blight,Bacterial Panicle Blight,Bacterial Panicle Blight,TP,No,1,Integrated Gradients,1,Focused on the damaged grain
+16,Bacterial Panicle Blight,Bacterial Panicle Blight,Bacterial Panicle Blight,TP,Yes,0.95,Lime,0.4,Missed some aspects of damaged grain
+16,Bacterial Panicle Blight,Bacterial Panicle Blight,Bacterial Panicle Blight,TP,Yes,0.95,GradCAM,0.5,Focused on the damaged grain but also noisy areas
+16,Bacterial Panicle Blight,Bacterial Panicle Blight,Bacterial Panicle Blight,TP,Yes,0.95,Integrated Gradients,1,Focused on the damaged grain
+17,Bacterial Panicle Blight,Dead Heart,Bacterial Leaf Streak,FP,No,0.83,Lime,0.5,Captured some damaged grain but too much confident noise
+17,Bacterial Panicle Blight,Dead Heart,Bacterial Leaf Streak,FP,No,0.83,GradCAM,0.6,Captured some damaged grain
+17,Bacterial Panicle Blight,Dead Heart,Bacterial Leaf Streak,FP,No,0.83,Integrated Gradients,1,Focused on the damaged grain
+17,Bacterial Panicle Blight,Dead Heart,Dead Heart,TP,Yes,0.8,Lime,0.6,Captured some damaged grain but too much confident noise
+17,Bacterial Panicle Blight,Dead Heart,Dead Heart,TP,Yes,0.8,GradCAM,0.3,Too much attribution makes it unclear
+17,Bacterial Panicle Blight,Dead Heart,Dead Heart,TP,Yes,0.8,Integrated Gradients,1,Focused on the damaged grain
+18,Blast,Blast,Blast,TP,No,0.99,Lime,0.7,Captures most main damages with moderate attribution
+18,Blast,Blast,Blast,TP,No,0.99,GradCAM,0.7,Captures most main damages but some highly confident noise
+18,Blast,Blast,Blast,TP,No,0.99,Integrated Gradients,0.9,Captures most main damages
+18,Blast,Blast,Blast,TP,Yes,1,Lime,0.5,Captures some main damages
+18,Blast,Blast,Blast,TP,Yes,1,GradCAM,0.9,Captures most main damages
+18,Blast,Blast,Blast,TP,Yes,1,Integrated Gradients,0.9,Captures most main damages
+19,Blast,Blast,Blast,TP,No,1,Lime,0.4,Detects some damaged areas as well as highlighted leaves with damages
+19,Blast,Blast,Blast,TP,No,1,GradCAM,1,Detects correct placements
+19,Blast,Blast,Blast,TP,No,1,Integrated Gradients,0.9,Detects correct placements with minimal noise
+19,Blast,Blast,Blast,TP,Yes,1,Lime,0.3,Bighlighted some damaged leaves with lower attribution
+19,Blast,Blast,Blast,TP,Yes,1,GradCAM,1,Detects correct placements
+19,Blast,Blast,Blast,TP,Yes,1,Integrated Gradients,0.9,Detects correct placements with minimal noise
+20,Blast,Blast,Blast,TP,No,1,Lime,0.5,Some regions with diseases were highlighted
+20,Blast,Blast,Blast,TP,No,1,GradCAM,0.9,Most diseases were highlighted but some smaller ones had low confidence
+20,Blast,Blast,Blast,TP,No,1,Integrated Gradients,0.9,Most regions with diseases were highlighted
+20,Blast,Blast,Blast,TP,Yes,1,Lime,0.5,Some regions with diseases were highlighted
+20,Blast,Blast,Blast,TP,Yes,1,GradCAM,0.8,Most diseases were highlighted but too much high confidence throughout
+20,Blast,Blast,Blast,TP,Yes,1,Integrated Gradients,0.9,Most regions with diseases were highlighted
+21,Blast,Blast,Downy Mildew,FN,No,0.98,Lime,0.4,Tip were weak and noise was not the highest
+21,Blast,Blast,Downy Mildew,FN,No,0.98,GradCAM,0.6,Highlights tips but also shadow distortions. Gets some brown spots
+21,Blast,Blast,Downy Mildew,FN,No,0.98,Integrated Gradients,0.6,Highlights tips but also shadow distortions. Gets some brown spots
+21,Blast,Blast,Blast,TP,Yes,1,Lime,0.8,Highlights tips and spots but introduces too much noise
+21,Blast,Blast,Blast,TP,Yes,1,GradCAM,0.7,Highlights tip but not some spots
+21,Blast,Blast,Blast,TP,Yes,1,Integrated Gradients,0.8,Highlights tips and some spots
+22,Blast,Blast,Tungro,FN,No,0.79,Lime,0.6,Most of essential spots are highlighted with low attribution
+22,Blast,Blast,Tungro,FN,No,0.79,GradCAM,0.7,"Most of the graph was highlighted with similar attribution, and some spots are highlighted with high aatribution"
+22,Blast,Blast,Tungro,FN,No,0.79,Integrated Gradients,0.7,Some essential parts are highlighted
+22,Blast,Blast,Blast,TP,Yes,0.92,Lime,0.5,Only some spots highlighted with decent attribution
+22,Blast,Blast,Blast,TP,Yes,0.92,GradCAM,0.3,"Most of the graph is highlighted with high attribution, and essential spot is not"
+22,Blast,Blast,Blast,TP,Yes,0.92,Integrated Gradients,0.9,Most of essential spots are highlighted
+23,Blast,Blast,Blast,FN,No,0.96,Lime,0.5,Highlighted correct regions with great attribution but has too much noise
+23,Blast,Blast,Blast,FN,No,0.96,GradCAM,0.5,Highlighted correct regions but noise is higher attributed
+23,Blast,Blast,Blast,FN,No,0.96,Integrated Gradients,0.5,Highlighted correct regions but noise is higher attributed
+23,Blast,Blast,Blast,TP,Yes,0.98,Lime,0.7,Highlighted correct regions with great attribution but has too much noise
+23,Blast,Blast,Blast,TP,Yes,0.98,GradCAM,0.5,Highlighted correct regions but noise is higher attributed
+23,Blast,Blast,Blast,TP,Yes,0.98,Integrated Gradients,0.5,Highlighted correct regions but noise is higher attributed
+24,Blast,Downy Mildew,Blast,FP,No,0.52,Lime,0.4,Captured part of main leaf but not other diseased parts well
+24,Blast,Downy Mildew,Blast,FP,No,0.52,GradCAM,0.7,High attribution on main leaf and some high and low attribution around in unnecessary areas
+24,Blast,Downy Mildew,Blast,FP,No,0.52,Integrated Gradients,0.6,High attribution on main leaf and some lower attribution around. Did not capture mildew in bottom right much
+24,Blast,Downy Mildew,Downy Mildew,TP,Yes,0.72,Lime,0.4,Captured part of main leaf but not other diseased parts well
+24,Blast,Downy Mildew,Downy Mildew,TP,Yes,0.72,GradCAM,0.8,High attribution on main leaf and some attribution around in unnecessary areas
+24,Blast,Downy Mildew,Downy Mildew,TP,Yes,0.72,Integrated Gradients,0.6,High attribution on main leaf and some attribution around in unnecessary areas. Did not capture mildew in bottom right much
+25,Blast,Brown Spot,Blast,FP,No,0.73,Lime,0.8,Browning was covered with moderate noise
+25,Blast,Brown Spot,Blast,FP,No,0.73,GradCAM,0.6,"Diseased part on leaf skipped over, too much noise. includes some diseased spots"
+25,Blast,Brown Spot,Blast,FP,No,0.73,Integrated Gradients,0.6,"Diseased part on leaf skipped over, too much noise. includes some diseased spots"
+25,Blast,Brown Spot,Brown Spot,TP,Yes,0.99,Lime,0.7,Browning was covered with high and moderate noise
+25,Blast,Brown Spot,Brown Spot,TP,Yes,0.99,GradCAM,0.6,"Diseased part on leaf skipped over, too much noise. includes some diseased spots"
+25,Blast,Brown Spot,Brown Spot,TP,Yes,0.99,Integrated Gradients,,"Diseased part on leaf skipped over, too much noise. includes some diseased spots"
+26,Blast,Normal,Blast,FP,No,0.64,Lime,N/A,Little to high attribution everywhere
+26,Blast,Normal,Blast,FP,No,0.64,GradCAM,N/A,Little to high attribution in most spots
+26,Blast,Normal,Blast,FP,No,0.64,Integrated Gradients,N/A,Little to high attribution in some spots
+26,Blast,Normal,Normal,TP,Yes,0.97,Lime,N/A,Little to high attribution everywhere
+26,Blast,Normal,Normal,TP,Yes,0.97,GradCAM,N/A,Little to high attribution in most spots
+26,Blast,Normal,Normal,TP,Yes,0.97,Integrated Gradients,N/A,Little to high attribution in some spots
+27,Brown Spot,Brown Spot,Brown Spot,TP,No,1,Lime,0.3,"Ooze not highlighted well, too much noise"
+27,Brown Spot,Brown Spot,Brown Spot,TP,No,1,GradCAM,0.6,Ooze highlighted but some other spots highlighted with high attribution
+27,Brown Spot,Brown Spot,Brown Spot,TP,No,1,Integrated Gradients,0.6,Ooze highlighted but some other spots highlighted with high attribution
+27,Brown Spot,Brown Spot,Brown Spot,TP,Yes,1,Lime,0.3,"Ooze not highlighted well, too much noise"
+27,Brown Spot,Brown Spot,Brown Spot,TP,Yes,1,GradCAM,0.7,Ooze highlighted but some other spots highlighted with high attribution
+27,Brown Spot,Brown Spot,Brown Spot,TP,Yes,1,Integrated Gradients,0.7,Ooze highlighted but some other spots highlighted with high attribution
+28,Brown Spot,Brown Spot,Brown Spot,TP,No,1,Lime,0.7,"Leaves with white ooze highlighted well, but some noise"
+28,Brown Spot,Brown Spot,Brown Spot,TP,No,1,GradCAM,0.5,"Some leaves with white ooze highlighted, but others missed or given low attributions"
+28,Brown Spot,Brown Spot,Brown Spot,TP,No,1,Integrated Gradients,0.8,"Most leaves with white ooze highlighted, but a few missed or given low attributions"
+28,Brown Spot,Brown Spot,Brown Spot,TP,Yes,1,Lime,0.4,High attributions are not given to main oozes
+28,Brown Spot,Brown Spot,Brown Spot,TP,Yes,1,GradCAM,0.1,"Too much high attribution, some oozes skipped over"
+28,Brown Spot,Brown Spot,Brown Spot,TP,Yes,1,Integrated Gradients,0.7,"Most leaves with white ooze highlighted, but a few missed or given low attributions"
+29,Brown Spot,Brown Spot,Brown Spot,TP,No,1,Lime,0.4,"Some brown spots highlighted with confidence, too much noise"
+29,Brown Spot,Brown Spot,Brown Spot,TP,No,1,GradCAM,0.4,Many brown spots not with high confidence against negative areas with it 
+29,Brown Spot,Brown Spot,Brown Spot,TP,No,1,Integrated Gradients,0.5,"Brown spots highlighted, some confident noise especially bottom right with the light"
+29,Brown Spot,Brown Spot,Brown Spot,TP,Yes,1,Lime,0.4,"Some brown spots highlighted with confidence, too much noise"
+29,Brown Spot,Brown Spot,Brown Spot,TP,Yes,1,GradCAM,0.4,Many brown spots not with high confidence against negative areas with it 
+29,Brown Spot,Brown Spot,Brown Spot,TP,Yes,1,Integrated Gradients,0.6,"Brown spots highlighted, few confident noise but in smaller areas"
+30,Brown Spot,Brown Spot,Hispa,FN,No,0.63,Lime,0.5,Had main spot and everything else was clustered
+30,Brown Spot,Brown Spot,Hispa,FN,No,0.63,GradCAM,0.5,Missed high confidence for main spot and some random high spots
+30,Brown Spot,Brown Spot,Hispa,FN,No,0.63,Integrated Gradients,0.7,"Highlighted brown tips, cluster makes it confusing"
+30,Brown Spot,Brown Spot,Brown Spot,TP,Yes,0.99,Lime,0.5,Had main spot and everything else was clustered
+30,Brown Spot,Brown Spot,Brown Spot,TP,Yes,0.99,GradCAM,0.5,Missed high confidence for main spot and some random high spots
+30,Brown Spot,Brown Spot,Brown Spot,TP,Yes,0.99,Integrated Gradients,0.8,"Highlighted brown tips, cluster makes it confusing but not as dense"
+31,Brown Spot,Brown Spot,Blast,FN,No,0.73,Lime,0.6,Got parts of disease but too much confident noise
+31,Brown Spot,Brown Spot,Blast,FN,No,0.73,GradCAM,0.6,Got parts of disease but too much confident noise
+31,Brown Spot,Brown Spot,Blast,FN,No,0.73,Integrated Gradients,0.7,Got parts of disease but moderate noise
+31,Brown Spot,Brown Spot,Brown Spot,TP,Yes,0.99,Lime,0.6,Got parts of disease but too much confident noise
+31,Brown Spot,Brown Spot,Brown Spot,TP,Yes,0.99,GradCAM,0.6,Got parts of disease but too much confident noise
+31,Brown Spot,Brown Spot,Brown Spot,TP,Yes,0.99,Integrated Gradients,0.7,Got parts of disease but moderate noise
+32,Brown Spot,Brown Spot,Bacterial Leaf Streak,FN,No,0.99,Lime,0.5,Got disease but not with the best confidence and moderate noise
+32,Brown Spot,Brown Spot,Bacterial Leaf Streak,FN,No,0.99,GradCAM,0.7,Got the disease but too much confidence noise
+32,Brown Spot,Brown Spot,Bacterial Leaf Streak,FN,No,0.99,Integrated Gradients,0.7,"Got the disease but too much confidence noise, less than GradCAM though. Missed some spots"
+32,Brown Spot,Brown Spot,Bacterial Leaf Streak,FN,Yes,1,Lime,0.5,Got disease but not with the best confidence and moderate noise
+32,Brown Spot,Brown Spot,Bacterial Leaf Streak,FN,Yes,1,GradCAM,0.5,Got disease but not with the best confidence and moderate noise
+32,Brown Spot,Brown Spot,Bacterial Leaf Streak,FN,Yes,1,Integrated Gradients,0.7,Got the disease but too much confidence noise. Missed some spots
+33,Brown Spot,Downy Mildew,Brown Spot,FP,No,0.78,Lime,0.5,Highlighted influential regions with high attribution but also negative spots. Missed some spots
+33,Brown Spot,Downy Mildew,Brown Spot,FP,No,0.78,GradCAM,0.6," Highlighted some spots with low attribution, gave high attribution to negative spots"
+33,Brown Spot,Downy Mildew,Brown Spot,FP,No,0.78,Integrated Gradients,0.4,"Incorrectly highlighted light leaf from sun as most influential. Highlighted some spots with low attribution, gave high attribution to negative spots"
+33,Brown Spot,Downy Mildew,Brown Spot,FP,Yes,0.9,Lime,0.4,Highlighted positive spots with low attribution and incorrect spots with high attribution
+33,Brown Spot,Downy Mildew,Brown Spot,FP,Yes,0.9,GradCAM,1,Highlighted spots with the greatest attribution
+33,Brown Spot,Downy Mildew,Brown Spot,FP,Yes,0.9,Integrated Gradients,0.4,"Incorrectly highlighted light leaf from sun as most influential. Highlighted some spots with low attribution, gave high attribution to negative spots"
+34,Brown Spot,Downy Mildew,Brown Spot,FP,No,0.64,Lime,0.8,Brown streak highlighted but noise especially high noise in top right
+34,Brown Spot,Downy Mildew,Brown Spot,FP,No,0.64,GradCAM,0.2,Major streak missed and too much high noise
+34,Brown Spot,Downy Mildew,Brown Spot,FP,No,0.64,Integrated Gradients,0.5,Parts of brown streak missed and too much high noise
+34,Brown Spot,Downy Mildew,Downy Mildew,TP,Yes,0.78,Lime,0.2,Major streak missed and too much high noise
+34,Brown Spot,Downy Mildew,Downy Mildew,TP,Yes,0.78,GradCAM,0.3,Major streak mostly missed and too much high noise
+34,Brown Spot,Downy Mildew,Downy Mildew,TP,Yes,0.78,Integrated Gradients,0.5,Parts of brown streak missed and too much high noise
+35,Brown Spot,Normal,Brown Spot,FP,No,1,Lime,N/A,Little to high attribution everywhere
+35,Brown Spot,Normal,Brown Spot,FP,No,1,GradCAM,N/A,Little to high attribution everywhere
+35,Brown Spot,Normal,Brown Spot,FP,No,1,Integrated Gradients,N/A,Little to high attribution in some leaves
+35,Brown Spot,Normal,Normal,TP,Yes,0.91,Lime,N/A,Little to high attribution in some leaves
+35,Brown Spot,Normal,Normal,TP,Yes,0.91,GradCAM,N/A,Little to high attribution everywhere
+35,Brown Spot,Normal,Normal,TP,Yes,0.91,Integrated Gradients,N/A,Little to high attribution in some leaves
+36,Dead Heart,Dead Heart,Dead Heart,TP,No,1,Lime,0.5,"Parts of damaged grain highlighted, too much noise"
+36,Dead Heart,Dead Heart,Dead Heart,TP,No,1,GradCAM,0.9,Damaged grain almost perfectly highlighted
+36,Dead Heart,Dead Heart,Dead Heart,TP,No,1,Integrated Gradients,0.9,Damaged grain almost perfectly highlighted
+36,Dead Heart,Dead Heart,Dead Heart,TP,Yes,1,Lime,0.4,"Parts of damaged grain highlighted, too much noise"
+36,Dead Heart,Dead Heart,Dead Heart,TP,Yes,1,GradCAM,0.9,Damaged grain almost perfectly highlighted
+36,Dead Heart,Dead Heart,Dead Heart,TP,Yes,1,Integrated Gradients,1,Damaged grain perfectly highlighted
+37,Dead Heart,Dead Heart,Dead Heart,TP,No,1,Lime,0.4,Highlights part of damaged grain but has too much noise
+37,Dead Heart,Dead Heart,Dead Heart,TP,No,1,GradCAM,0.4,Too much focus in non-damaged area
+37,Dead Heart,Dead Heart,Dead Heart,TP,No,1,Integrated Gradients,0.9,"Damaged grain perfectly highlighted, includes some light noise"
+37,Dead Heart,Dead Heart,Dead Heart,TP,Yes,1,Lime,0.3,Barely highlights damaged grain but has too much noise
+37,Dead Heart,Dead Heart,Dead Heart,TP,Yes,1,GradCAM,0.3,"Too much focus in non-damaged area, does not highlight part of grain"
+37,Dead Heart,Dead Heart,Dead Heart,TP,Yes,1,Integrated Gradients,0.9,"Damaged grain perfectly highlighted, includes some light noise"
+38,Dead Heart,Dead Heart,Dead Heart,TP,No,1,Lime,0.7,"Most of highest attribution is on damaged grain but not fully, has some noise"
+38,Dead Heart,Dead Heart,Dead Heart,TP,No,1,GradCAM,0.1,Pretty much highlights everything high except the damaged grain
+38,Dead Heart,Dead Heart,Dead Heart,TP,No,1,Integrated Gradients,0.9,"Damaged grain perfectly highlighted, includes some light noise"
+38,Dead Heart,Dead Heart,Dead Heart,TP,Yes,1,Lime,0.7,"Most of highest attribution is on damaged grain but not fully, has some noise"
+38,Dead Heart,Dead Heart,Dead Heart,TP,Yes,1,GradCAM,0.1,Pretty much highlights everything high except the damaged grain
+38,Dead Heart,Dead Heart,Dead Heart,TP,Yes,1,Integrated Gradients,0.9,"Damaged grain perfectly highlighted, includes some light noise"
+39,Dead Heart,Dead Heart,Downy Mildew,FN,No,0.5,Lime,0.3,"Focuses on non-damaged part, misses some of grain"
+39,Dead Heart,Dead Heart,Downy Mildew,FN,No,0.5,GradCAM,0.5,Highlights damaged grain ok but too much high noise
+39,Dead Heart,Dead Heart,Downy Mildew,FN,No,0.5,Integrated Gradients,0.9,"Damaged grain perfectly highlighted, includes some light noise"
+39,Dead Heart,Dead Heart,Dead Heart,TP,Yes,0.97,Lime,0.3,"Focuses on non-damaged part, misses some of grain"
+39,Dead Heart,Dead Heart,Dead Heart,TP,Yes,0.97,GradCAM,0.3,"Focuses on non-damaged part, misses some of grain"
+39,Dead Heart,Dead Heart,Dead Heart,TP,Yes,0.97,Integrated Gradients,0.9,"Damaged grain perfectly highlighted, includes some light noise"
+40,Dead Heart,Dead Heart,Blast,FN,No,0.94,Lime,0.6,Highlights damaged grain ok but too much high noise
+40,Dead Heart,Dead Heart,Blast,FN,No,0.94,GradCAM,0.4,Focuses on non-damaged part
+40,Dead Heart,Dead Heart,Blast,FN,No,0.94,Integrated Gradients,0.9,"Damaged grain perfectly highlighted, includes some light noise"
+40,Dead Heart,Dead Heart,Dead Heart,TP,Yes,1,Lime,0.3,"Focuses on non-damaged part, misses some of grain"
+40,Dead Heart,Dead Heart,Dead Heart,TP,Yes,1,GradCAM,0.5,Highlights damaged grain ok but too much high noise
+40,Dead Heart,Dead Heart,Dead Heart,TP,Yes,1,Integrated Gradients,0.9,"Damaged grain perfectly highlighted, includes some light noise"
+41,Dead Heart,Dead Heart,Bacterial Panicle Blight,FN,No,0.83,Lime,0.5,"Parts of important grain are highlighted strongly or weakly, some grain missed, some noise"
+41,Dead Heart,Dead Heart,Bacterial Panicle Blight,FN,No,0.83,GradCAM,0.6,"Too much moderate noise, cannot read. Parts of important grain are highlighted strongly"
+41,Dead Heart,Dead Heart,Bacterial Panicle Blight,FN,No,0.83,Integrated Gradients,0.8,"Damaged grain and straws almost perfectly highlighted, includes some light noise"
+41,Dead Heart,Dead Heart,Dead Heart,TP,Yes,0.8,Lime,0.4,"Parts of important grain are highlighted strongly or weakly, some grain missed, some noise"
+41,Dead Heart,Dead Heart,Dead Heart,TP,Yes,0.8,GradCAM,0.3,"Too much high noise, cannot read"
+41,Dead Heart,Dead Heart,Dead Heart,TP,Yes,0.8,Integrated Gradients,0.9,"Damaged grain and straws perfectly highlighted, includes some light noise"
+42,Dead Heart,Tungro,Dead Heart,FP,No,0.47,Lime,0.2,"Too much noise, not clear"
+42,Dead Heart,Tungro,Dead Heart,FP,No,0.47,GradCAM,0.6,Follows some damaged regions
+42,Dead Heart,Tungro,Dead Heart,FP,No,0.47,Integrated Gradients,0.8,Damaged regions were highlighted but has too much noise that does not follow strands
+42,Dead Heart,Tungro,Tungro,TP,Yes,0.85,Lime,0.2,"Too much noise, not clear"
+42,Dead Heart,Tungro,Tungro,TP,Yes,0.85,GradCAM,0.7,Follows some damaged regions but does not include important ones
+42,Dead Heart,Tungro,Tungro,TP,Yes,0.85,Integrated Gradients,0.7,Damaged regions were highlighted but has too much noise that does not follow strands
+43,Dead Heart,Normal,Dead Heart,FP,No,0.61,Lime,N/A,Highlighted most of the map with various attributions
+43,Dead Heart,Normal,Dead Heart,FP,No,0.61,GradCAM,N/A,Highlighted most of the map with various attributions
+43,Dead Heart,Normal,Dead Heart,FP,No,0.61,Integrated Gradients,N/A,Focused in a few spots
+43,Dead Heart,Normal,Normal,TP,Yes,0.99,Lime,N/A,Highlighted most of the map with various attributions
+43,Dead Heart,Normal,Normal,TP,Yes,0.99,GradCAM,N/A,Highlighted most of the map with various attributions
+43,Dead Heart,Normal,Normal,TP,Yes,0.99,Integrated Gradients,N/A,Focused in a few spots
+44,Downy Mildew,Downy Mildew,Downy Mildew,TP,No,1,Lime,0.4,Highlights some disease portions but includes noise
+44,Downy Mildew,Downy Mildew,Downy Mildew,TP,No,1,GradCAM,0.5,Highlighted each major leaf although it gives no insight about diseased portion
+44,Downy Mildew,Downy Mildew,Downy Mildew,TP,No,1,Integrated Gradients,0.8,Highlights diseased region but includes noise
+44,Downy Mildew,Downy Mildew,Downy Mildew,TP,Yes,1,Lime,0.4,Highlights some disease portions but includes noise
+44,Downy Mildew,Downy Mildew,Downy Mildew,TP,Yes,1,GradCAM,0.5,Highlighted each major leaf although it gives no insight about diseased portion
+44,Downy Mildew,Downy Mildew,Downy Mildew,TP,Yes,1,Integrated Gradients,0.8,Highlights diseased region but includes noise
+45,Downy Mildew,Downy Mildew,Downy Mildew,TP,No,1,Lime,0.5,"Includes some main dried pieces but includes noise, high and low"
+45,Downy Mildew,Downy Mildew,Downy Mildew,TP,No,1,GradCAM,0.6,"Includes main dried pieces but includes noise, high and low"
+45,Downy Mildew,Downy Mildew,Downy Mildew,TP,No,1,Integrated Gradients,0.7,"Includes main dried pieces, some with less confidence, but includes noise"
+45,Downy Mildew,Downy Mildew,Downy Mildew,TP,Yes,1,Lime,0.5,"Includes some main dried pieces but includes noise, high and low"
+45,Downy Mildew,Downy Mildew,Downy Mildew,TP,Yes,1,GradCAM,0.5,"Includes main dried pieces with moderate confidence but includes noise, high and low"
+45,Downy Mildew,Downy Mildew,Downy Mildew,TP,Yes,1,Integrated Gradients,0.8,Includes main dried pieces but includes noise
+46,Downy Mildew,Downy Mildew,Downy Mildew,TP,No,0.99,Lime,0.2,Incorrect with noise
+46,Downy Mildew,Downy Mildew,Downy Mildew,TP,No,0.99,GradCAM,0.4,Misses some spots with confident and moderate noise
+46,Downy Mildew,Downy Mildew,Downy Mildew,TP,No,0.99,Integrated Gradients,0.2,Incorrect with noise
+46,Downy Mildew,Downy Mildew,Downy Mildew,TP,Yes,0.97,Lime,0.2,Incorrect with noise
+46,Downy Mildew,Downy Mildew,Downy Mildew,TP,Yes,0.97,GradCAM,0.4,Misses some spots with confident and moderate noise
+46,Downy Mildew,Downy Mildew,Downy Mildew,TP,Yes,0.97,Integrated Gradients,0.7,Gets some parts correct but introduces too much confident and moderate noise
+47,Downy Mildew,Downy Mildew,Hispa,FN,No,0.93,Lime,0.3,Damaged parts are least confident
+47,Downy Mildew,Downy Mildew,Hispa,FN,No,0.93,GradCAM,0.3,Damaged parts are least confident
+47,Downy Mildew,Downy Mildew,Hispa,FN,No,0.93,Integrated Gradients,0.7,Hightlights damaged part but includes some noise that can be more confident
+47,Downy Mildew,Downy Mildew,Downy Mildew,TP,Yes,1,Lime,0.3,Damaged parts are least confident
+47,Downy Mildew,Downy Mildew,Downy Mildew,TP,Yes,1,GradCAM,0.7,Highlights some damaged parts as most confident but contains too much moderate and low noise
+47,Downy Mildew,Downy Mildew,Downy Mildew,TP,Yes,1,Integrated Gradients,0.8,Hightlights damaged part but includes some noise
+48,Downy Mildew,Downy Mildew,Downy Mildew,FN,No,0.52,Lime,0.6,Highlights part of diseased region with confidence but includes noise
+48,Downy Mildew,Downy Mildew,Downy Mildew,FN,No,0.52,GradCAM,0.9,Highlights nearly perfectly with confidence but missing a piece of damage
+48,Downy Mildew,Downy Mildew,Downy Mildew,FN,No,0.52,Integrated Gradients,0.7,Gets it but too much noise
+48,Downy Mildew,Downy Mildew,Downy Mildew,TP,Yes,0.72,Lime,0.6,Highlights part of diseased region with confidence but includes noise
+48,Downy Mildew,Downy Mildew,Downy Mildew,TP,Yes,0.72,GradCAM,0.9,Highlights nearly perfectly with confidence but missing a piece of damage
+48,Downy Mildew,Downy Mildew,Downy Mildew,TP,Yes,0.72,Integrated Gradients,0.7,Gets it but too much noise
+49,Downy Mildew,Downy Mildew,Hispa,FN,No,0.53,Lime,0.4,"Damaged area is moderate, noise"
+49,Downy Mildew,Downy Mildew,Hispa,FN,No,0.53,GradCAM,1,Highlighted damages with moderate or high confidence
+49,Downy Mildew,Downy Mildew,Hispa,FN,No,0.53,Integrated Gradients,0.6,Damaged tips were highlighted but had too much noise especially in sky. Goes into damaged leaf too much to the healthy side
+49,Downy Mildew,Downy Mildew,Downy Mildew,TP,Yes,0.88,Lime,0.6,Highlighted cluster well but misses a few areas
+49,Downy Mildew,Downy Mildew,Downy Mildew,TP,Yes,0.88,GradCAM,0.9,Highlighted damages with high confidence but missing one section
+49,Downy Mildew,Downy Mildew,Downy Mildew,TP,Yes,0.88,Integrated Gradients,0.7,Damaged tips were highlighted but had too much noise especially in sky
+50,Downy Mildew,Blast,Downy Mildew,FP,No,0.98,Lime,0.2,Important stuff has not good confidence
+50,Downy Mildew,Blast,Downy Mildew,FP,No,0.98,GradCAM,0.5,Gets some things accurately but includes confident and mediocre noise. Missing spots
+50,Downy Mildew,Blast,Downy Mildew,FP,No,0.98,Integrated Gradients,0.7,Gets some things accurately but includes confident and mediocre noise
+50,Downy Mildew,Blast,Blast,TP,Yes,1,Lime,0.8,Damaged areas have highest confidence but too much noise
+50,Downy Mildew,Blast,Blast,TP,Yes,1,GradCAM,0.7,Gets some things accurately but includes confident and mediocre noise. Missing spots
+50,Downy Mildew,Blast,Blast,TP,Yes,1,Integrated Gradients,0.5,Gets some things accurately but includes confident and mediocre noise. Missing spots
+51,Downy Mildew,Dead Heart,Downy Mildew,FP,No,0.5,Lime,0.2,Highlights to grain with no or little confidence
+51,Downy Mildew,Dead Heart,Downy Mildew,FP,No,0.5,GradCAM,0.6,Gets the grain but too much confident noise
+51,Downy Mildew,Dead Heart,Downy Mildew,FP,No,0.5,Integrated Gradients,0.9,Gets it correct with some very minor noise
+51,Downy Mildew,Dead Heart,Dead Heart,TP,Yes,0.97,Lime,0.2,Highlights to grain with no or little confidence
+51,Downy Mildew,Dead Heart,Dead Heart,TP,Yes,0.97,GradCAM,0.5,"Skips over part of the damaged grain, too much confident noise"
+51,Downy Mildew,Dead Heart,Dead Heart,TP,Yes,0.97,Integrated Gradients,0.9,Gets it correct with some very minor noise
+52,Hispa,Hispa,Hispa,TP,No,1,Lime,0.6,"Damaged part is not the highest, and there is lots of noise"
+52,Hispa,Hispa,Hispa,TP,No,1,GradCAM,0.6,"Damaged part is not the highest, and there is lots of noise"
+52,Hispa,Hispa,Hispa,TP,No,1,Integrated Gradients,0.8,Gets it correct with some confidence and minor noise
+52,Hispa,Hispa,Hispa,TP,Yes,1,Lime,0.6,"Damaged part is not the highest, and there is lots of noise"
+52,Hispa,Hispa,Hispa,TP,Yes,1,GradCAM,0.6,"Damaged part is not the highest, and there is lots of noise"
+52,Hispa,Hispa,Hispa,TP,Yes,1,Integrated Gradients,0.8,Gets it correct with some confidence and minor noise
+53,Hispa,Hispa,Hispa,TP,No,0.91,Lime,0.6,"Damaged part is not the highest, and there is lots of noise"
+53,Hispa,Hispa,Hispa,TP,No,0.91,GradCAM,0.6,"Damaged part is not the highest, and there is lots of noise"
+53,Hispa,Hispa,Hispa,TP,No,0.91,Integrated Gradients,0.6,Gets it partially correct with some confident noise
+53,Hispa,Hispa,Hispa,TP,Yes,0.41,Lime,0.6,"Damaged part is not the highest, and there is lots of noise"
+53,Hispa,Hispa,Hispa,TP,Yes,0.41,GradCAM,0.6,"Damaged part is not the highest, and there is lots of noise"
+53,Hispa,Hispa,Hispa,TP,Yes,0.41,Integrated Gradients,0.7,Gets it correct with some confident noise
+54,Hispa,Hispa,Hispa,TP,No,1,Lime,0.5,"Too much noise, not clear"
+54,Hispa,Hispa,Hispa,TP,No,1,GradCAM,0.5,"Too much noise, not clear"
+54,Hispa,Hispa,Hispa,TP,No,1,Integrated Gradients,0.5,"Too much noise, not clear"
+54,Hispa,Hispa,Hispa,TP,Yes,1,Lime,0.5,"Too much noise, not clear"
+54,Hispa,Hispa,Hispa,TP,Yes,1,GradCAM,0.5,"Too much noise, not clear"
+54,Hispa,Hispa,Hispa,TP,Yes,1,Integrated Gradients,0.5,"Too much noise, not clear"
+55,Hispa,Hispa,Tungro,FN,No,0.52,Lime,0.5,"Damaged part is not the highest, and there is lots of noise"
+55,Hispa,Hispa,Tungro,FN,No,0.52,GradCAM,0.5,Gets it correct with low confidence and includes confident noise
+55,Hispa,Hispa,Tungro,FN,No,0.52,Integrated Gradients,0.7,Gets it correct with some moderate noise
+55,Hispa,Hispa,Hispa,TP,Yes,0.78,Lime,0.8,Gets it correct with some confident noise
+55,Hispa,Hispa,Hispa,TP,Yes,0.78,GradCAM,0.4,Gets it partially correct with low confidence as it misses a spot and includes confident noise
+55,Hispa,Hispa,Hispa,TP,Yes,0.78,Integrated Gradients,0.7,Gets it correct with some confident noise
+56,Hispa,Hispa,Normal,FN,No,0.99,Lime,N/A,Highlights too much weak stuff
+56,Hispa,Hispa,Normal,FN,No,0.99,GradCAM,N/A,Highlights too much weak stuff
+56,Hispa,Hispa,Normal,FN,No,0.99,Integrated Gradients,N/A,Highlights damaged leaf and others
+56,Hispa,Hispa,Hispa,TP,Yes,0.81,Lime,0.1,Does not highlight damaged region
+56,Hispa,Hispa,Hispa,TP,Yes,0.81,GradCAM,1,Highlights only damaged region as confident correctly
+56,Hispa,Hispa,Hispa,TP,Yes,0.81,Integrated Gradients,0.7,Highlights damaged region and noise confidently
+57,Hispa,Hispa,Bacterial Leaf Blight,FN,No,1,Lime,0.3,Too unclear
+57,Hispa,Hispa,Bacterial Leaf Blight,FN,No,1,GradCAM,0.9,Highlights light streaks as most confident
+57,Hispa,Hispa,Bacterial Leaf Blight,FN,No,1,Integrated Gradients,0.8,Highlights light streaks as most confident with noise
+57,Hispa,Hispa,Bacterial Leaf Blight,FN,Yes,0.92,Lime,0.3,Too unclear
+57,Hispa,Hispa,Bacterial Leaf Blight,FN,Yes,0.92,GradCAM,0.9,Highlights light streaks as most confident
+57,Hispa,Hispa,Bacterial Leaf Blight,FN,Yes,0.92,Integrated Gradients,0.8,Highlights light streaks as most confident with noise
+58,Hispa,Downy Mildew,Hispa,FP,No,0.93,Lime,0.3,Diseased spots are low with confident noise
+58,Hispa,Downy Mildew,Hispa,FP,No,0.93,GradCAM,0.5,Diseased spots are low with confident noise
+58,Hispa,Downy Mildew,Hispa,FP,No,0.93,Integrated Gradients,0.7,Correctly highlighted moderately with confident noise spots
+58,Hispa,Downy Mildew,Downy Mildew,TP,Yes,1,Lime,0.3,Diseased spots are low with confident noise
+58,Hispa,Downy Mildew,Downy Mildew,TP,Yes,1,GradCAM,0.7,Some spots correctly highlighted confidently
+58,Hispa,Downy Mildew,Downy Mildew,TP,Yes,1,Integrated Gradients,0.9,Correctly highlighted with confident noise spots
+59,Hispa,Normal,Hispa,FP,No,0.88,Lime,N/A,Too much
+59,Hispa,Normal,Hispa,FP,No,0.88,GradCAM,N/A,Confused with the base of a plant
+59,Hispa,Normal,Hispa,FP,No,0.88,Integrated Gradients,N/A,Too much
+59,Hispa,Normal,Normal,TP,Yes,0.81,Lime,N/A,Highlights mostly tips of plants
+59,Hispa,Normal,Normal,TP,Yes,0.81,GradCAM,N/A,Confused with the base of a plant
+59,Hispa,Normal,Normal,TP,Yes,0.81,Integrated Gradients,N/A,Highlights mostly tips of plants
+60,Hispa,Normal,Hispa,FP,No,0.99,Lime,N/A,Highlights tips weakly
+60,Hispa,Normal,Hispa,FP,No,0.99,GradCAM,N/A,Highlights dirt
+60,Hispa,Normal,Hispa,FP,No,0.99,Integrated Gradients,N/A,Highlights some lighter streaks
+60,Hispa,Normal,Hispa,FP,Yes,0.76,Lime,N/A,Highlights tips 
+60,Hispa,Normal,Hispa,FP,Yes,0.76,GradCAM,N/A,Highlights base of plant
+60,Hispa,Normal,Hispa,FP,Yes,0.76,Integrated Gradients,N/A,Highlights some lighter streaks
+61,Normal,Normal,Normal,TP,No,1,Lime,N/A,Does not highlight light streak only surprisingly
+61,Normal,Normal,Normal,TP,No,1,GradCAM,N/A,Sparse confident spots
+61,Normal,Normal,Normal,TP,No,1,Integrated Gradients,N/A,Focuses on lighter streak
+61,Normal,Normal,Normal,TP,Yes,1,Lime,N/A,Does not highlight light streak only surprisingly
+61,Normal,Normal,Normal,TP,Yes,1,GradCAM,N/A,Sparse confident spots
+61,Normal,Normal,Normal,TP,Yes,1,Integrated Gradients,N/A,Focuses on lighter streak
+62,Normal,Normal,Normal,TP,No,1,Lime,N/A,Sparse confident spots
+62,Normal,Normal,Normal,TP,No,1,GradCAM,N/A,Highlights mostly right side
+62,Normal,Normal,Normal,TP,No,1,Integrated Gradients,N/A,Focus is in center that is somewhat light
+62,Normal,Normal,Normal,TP,Yes,1,Lime,N/A,Sparse confident spots
+62,Normal,Normal,Normal,TP,Yes,1,GradCAM,N/A,Highlights pretty much everything as very confident
+62,Normal,Normal,Normal,TP,Yes,1,Integrated Gradients,N/A,Mostly weak with a very few confident spots
+63,Normal,Normal,Normal,TP,No,1,Lime,N/A,Has a few brown and light strands that was classified
+63,Normal,Normal,Normal,TP,No,1,GradCAM,N/A,Highlighted confidently ground
+63,Normal,Normal,Normal,TP,No,1,Integrated Gradients,N/A,Highlighted confidently ground
+63,Normal,Normal,Normal,TP,Yes,1,Lime,N/A,Highlighted light top mostly
+63,Normal,Normal,Normal,TP,Yes,1,GradCAM,N/A,Mostly weak but confident spots towards the right
+63,Normal,Normal,Normal,TP,Yes,1,Integrated Gradients,N/A,Highlighted confidently ground
+64,Normal,Normal,Bacterial Leaf Blight,FN,No,0.47,Lime,N/A,Highlighted confidently throughout
+64,Normal,Normal,Bacterial Leaf Blight,FN,No,0.47,GradCAM,N/A,Highlighted confidently throughout
+64,Normal,Normal,Bacterial Leaf Blight,FN,No,0.47,Integrated Gradients,N/A,Confidently highlighted lighter streaks
+64,Normal,Normal,Normal,TP,Yes,0.91,Lime,N/A,Highlighted confidently throughout
+64,Normal,Normal,Normal,TP,Yes,0.91,GradCAM,N/A,Confidently highlighted base
+64,Normal,Normal,Normal,TP,Yes,0.91,Integrated Gradients,N/A,Confidently highlighted tips
+65,Normal,Normal,Hispa,FN,No,0.88,Lime,N/A,Low confidence in most
+65,Normal,Normal,Hispa,FN,No,0.88,GradCAM,N/A,Highlighted dark leaves
+65,Normal,Normal,Hispa,FN,No,0.88,Integrated Gradients,N/A,Highlighted light leaves
+65,Normal,Normal,Normal,TP,Yes,0.81,Lime,N/A,Highlighted top of light leaves 
+65,Normal,Normal,Normal,TP,Yes,0.81,GradCAM,N/A,Focused on lower leaves
+65,Normal,Normal,Normal,TP,Yes,0.81,Integrated Gradients,N/A,Highlighted light leaves
+66,Normal,Normal,Hispa,FN,No,0.99,Lime,N/A,Highlighted mostly light areas
+66,Normal,Normal,Hispa,FN,No,0.99,GradCAM,N/A,Highlighted mostly light areas
+66,Normal,Normal,Hispa,FN,No,0.99,Integrated Gradients,N/A,Highlighted mostly light areas
+66,Normal,Normal,Hispa,FN,Yes,0.76,Lime,N/A,Highlighted mostly light areas
+66,Normal,Normal,Hispa,FN,Yes,0.76,GradCAM,N/A,Highlighted mostly light areas
+66,Normal,Normal,Hispa,FN,Yes,0.76,Integrated Gradients,N/A,Highlighted mostly light areas
+67,Normal,Blast,Normal,FP,No,0.96,Lime,N/A,Correct area but scattered noise
+67,Normal,Blast,Normal,FP,No,0.96,GradCAM,N/A,Correct area with low confidence but scattered noise
+67,Normal,Blast,Normal,FP,No,0.96,Integrated Gradients,N/A,Correct area but scattered noise
+67,Normal,Blast,Blast,TP,Yes,0.98,Lime,0.7,Correct area but scattered noise
+67,Normal,Blast,Blast,TP,Yes,0.98,GradCAM,0.7,Correct area but scattered noise
+67,Normal,Blast,Blast,TP,Yes,0.98,Integrated Gradients,0.7,Correct area but scattered noise
+68,Normal,Hispa,Normal,FP,No,0.99,Lime,N/A,Missed part of light streak
+68,Normal,Hispa,Normal,FP,No,0.99,GradCAM,N/A,Missed light streak
+68,Normal,Hispa,Normal,FP,No,0.99,Integrated Gradients,N/A,Got light streak correctly with high confidence with some noise on nearby leaves
+68,Normal,Hispa,Hispa,TP,Yes,0.81,Lime,0.1,Missed light streak
+68,Normal,Hispa,Hispa,TP,Yes,0.81,GradCAM,1,Got light streak correctly with high confidence
+68,Normal,Hispa,Hispa,TP,Yes,0.81,Integrated Gradients,0.9,Got light streak correctly with high confidence with some noise on nearby leaves
+69,Tungro,Tungro,Tungro,TP,No,0.99,Lime,0,Did not even highlight anything at all
+69,Tungro,Tungro,Tungro,TP,No,0.99,GradCAM,0.4,"Missed part of streak, had low confidence for it against lots of noise"
+69,Tungro,Tungro,Tungro,TP,No,0.99,Integrated Gradients,0.9,Got streaks correctly with high confidence with some noise on nearby leaves
+69,Tungro,Tungro,Tungro,TP,Yes,0.99,Lime,0.6,"Highlighted part of the leaf with a streak with high confidence, and noise"
+69,Tungro,Tungro,Tungro,TP,Yes,0.99,GradCAM,0.3,"Missed part of streak, had low confidence for it against lots of noise"
+69,Tungro,Tungro,Tungro,TP,Yes,0.99,Integrated Gradients,0.9,Got streaks correctly with high confidence with some noise on nearby leaves
+70,Tungro,Tungro,Tungro,TP,No,1,Lime,0.1,Barely highlights anything
+70,Tungro,Tungro,Tungro,TP,No,1,GradCAM,0.6,Highlights disease with lower confidence
+70,Tungro,Tungro,Tungro,TP,No,1,Integrated Gradients,1,Highlights diseased plants
+70,Tungro,Tungro,Tungro,TP,Yes,1,Lime,0.6,Highlights part of disease with confidence
+70,Tungro,Tungro,Tungro,TP,Yes,1,GradCAM,0.6,Highlights disease with lower confidence
+70,Tungro,Tungro,Tungro,TP,Yes,1,Integrated Gradients,0.9,Highlights diseased plants with faint noise
+71,Tungro,Tungro,Tungro,TP,No,1,Lime,0,Didn't highlight anything
+71,Tungro,Tungro,Tungro,TP,No,1,GradCAM,0.6,Highlighted tips with moderate confidence but other noise
+71,Tungro,Tungro,Tungro,TP,No,1,Integrated Gradients,0.8,Highlighted tips but other noise
+71,Tungro,Tungro,Tungro,TP,Yes,1,Lime,0.4,Highlighted clusters do not match well
+71,Tungro,Tungro,Tungro,TP,Yes,1,GradCAM,0.8,Highlighted tips but other noise
+71,Tungro,Tungro,Tungro,TP,Yes,1,Integrated Gradients,0.8,Highlighted tips but other noise
+72,Tungro,Tungro,Bacterial Leaf Blight,FN,No,0.89,Lime,0.3,"Somewhat highlighted with lower confidence, noise"
+72,Tungro,Tungro,Bacterial Leaf Blight,FN,No,0.89,GradCAM,0.5,Parts of major regions highlighted with lots of moderate noise
+72,Tungro,Tungro,Bacterial Leaf Blight,FN,No,0.89,Integrated Gradients,0.6,Parts of major regions highlighted with lots of moderate noise
+72,Tungro,Tungro,Tungro,TP,Yes,1,Lime,0.4,Highlights disease with lower confidence
+72,Tungro,Tungro,Tungro,TP,Yes,1,GradCAM,0.7,Highlights parts of disease with lower confidence and some with higher
+72,Tungro,Tungro,Tungro,TP,Yes,1,Integrated Gradients,0.9,Focused on tips
+73,Tungro,Tungro,Hispa,FN,No,0.9,Lime,0,Did not even highlight anything at all
+73,Tungro,Tungro,Hispa,FN,No,0.9,GradCAM,0.3,Highlighted most plants as high
+73,Tungro,Tungro,Hispa,FN,No,0.9,Integrated Gradients,0.9,Highlighted dry spots very well
+73,Tungro,Tungro,Tungro,TP,Yes,1,Lime,0.5,Highlights were either incorrect and confident or correct and weak
+73,Tungro,Tungro,Tungro,TP,Yes,1,GradCAM,0.3,Highlighted most plants as high
+73,Tungro,Tungro,Tungro,TP,Yes,1,Integrated Gradients,0.9,Highlighted dry spots very well
+74,Tungro,Tungro,Hispa,FN,No,0.93,Lime,0.5,Highlights parts of damaged plants and some noise
+74,Tungro,Tungro,Hispa,FN,No,0.93,GradCAM,0.3,Highlights most tips which is noisy
+74,Tungro,Tungro,Hispa,FN,No,0.93,Integrated Gradients,0.6,Highlights parts of damaged plants and some noise
+74,Tungro,Tungro,Tungro,TP,Yes,0.93,Lime,0.7,Highlights mostly damaged tips and some noise
+74,Tungro,Tungro,Tungro,TP,Yes,0.93,GradCAM,0.8,Highlights mostly damaged leaf and some noise
+74,Tungro,Tungro,Tungro,TP,Yes,0.93,Integrated Gradients,0.8,Highlights mostly damaged leaf and some noise
+75,Tungro,Blast,Tungro,FP,No,0.79,Lime,0.2,Misses essential spot or has low attribution
+75,Tungro,Blast,Tungro,FP,No,0.79,GradCAM,0.6,Gets all the scattered spots but not very full
+75,Tungro,Blast,Tungro,FP,No,0.79,Integrated Gradients,0.7,Gets all the scattered spots but not very full
+75,Tungro,Blast,Blast,TP,Yes,0.92,Lime,0.6,Gets a cluster but main leaf is weak
+75,Tungro,Blast,Blast,TP,Yes,0.92,GradCAM,0.2,Mostly everything is confident except skipping an essential spot
+75,Tungro,Blast,Blast,TP,Yes,0.92,Integrated Gradients,0.8,Gets all the scattered spots but not very full
+76,Tungro,Hispa,Tungro,FP,No,0.52,Lime,0.4,Does not get damaged region with confidence
+76,Tungro,Hispa,Tungro,FP,No,0.52,GradCAM,1,Gets damaged region with confidence and some lighter damage
+76,Tungro,Hispa,Tungro,FP,No,0.52,Integrated Gradients,0.8,Gets damaged region but too much noise
+76,Tungro,Hispa,Hispa,TP,Yes,0.78,Lime,0.5,Gets damaged region but too much noise
+76,Tungro,Hispa,Hispa,TP,Yes,0.78,GradCAM,0.7,Gets damaged region but too much noise
+76,Tungro,Hispa,Hispa,TP,Yes,0.78,Integrated Gradients,0.9,Gets damaged region but too much noise
+77,Tungro,Blast,Tungro,FP,No,0.99,Lime,0,Does not show anything
+77,Tungro,Blast,Tungro,FP,No,0.99,GradCAM,0.6,"Gets part of damaged region with most confidence, but misses other"
+77,Tungro,Blast,Tungro,FP,No,0.99,Integrated Gradients,0.9,Gets damaged region nicely with light noise
+77,Tungro,Blast,Blast,TP,Yes,0.99,Lime,0.7,Misses damaged region with confidence
+77,Tungro,Blast,Blast,TP,Yes,0.99,GradCAM,0.1,Highlights everything with confidence except damaged regions
+77,Tungro,Blast,Blast,TP,Yes,0.99,Integrated Gradients,1,Gets damaged region nicely
